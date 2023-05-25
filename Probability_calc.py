@@ -14,7 +14,7 @@ class Hat() :
         draw_result = []
         for ball in range(how_many) :
             try :
-                b = self.contents.pop(random.randint(0, len(self.contents)+1))
+                b = self.contents.pop(random.randint(0, len(self.contents)-1))
             except :
                 continue
             draw_result.append(b)
